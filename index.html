@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给木起始页</title>
+    <link rel="shortcut icon" href="picture/favicon.ico" type="images/x-icon">
+</head>
+<body style="display:flex; flex-direction:column;" background="picture/background.jpg">
+    <div style="text-align: center; padding: 40px">
+          <img alt="给木logo" src="picture/head-portrait.jpg" width="80px" height="80px" style="border-radius: 50%">
+    </div>
+    <div></div>
+    <button id="dzs" onclick="dianzan()">0</button>
+    <form action="https://baidu.com/s" style="transform: translate(-50%, -50%);top: 50%;left: 50%;position: absolute;">
+          <input type="text" placeholder="请输入关键词" name="word" class="text" style="border-radius: 20%">
+          <input type="submit" value="搜索" style="border-radius: 20%">
+    </form>
+    <script>
+        function dianzan(){
+          let dianzanshubiaoqian = window.document.getElementById("dzs");
+          let dainzanshu = parseInt(dianzanshubiaoqian.innerText);
+          let xinshuzi = dainzanshu + 1;
+          dianzanshubiaoqian.innerText = xinshuzi;
+          return}
+    </script>
+</body>
+</html>
